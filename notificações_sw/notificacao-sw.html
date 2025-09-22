@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificação com Service Worker - Push Notifications</title>
+</head>
+<body>
+  <h1>Notificações via SW - Push Notifications</h1>
+  <p>Para testar o recebimento de notificação, mesmo com o site fechado:</p>
+  <p>Feche a aba Notificação com Service Worker - Push Notifications.</p>
+  <p>Acesse:</p>
+  <p><strong>chrome://inspect/#service-workers</strong></p>
+  <p>Localize o SW da sua aplicação e clique em <span style="color: blue;">inspect</span></p>
+  <p>Digite o seguinte código no Console, sem copiar e colar:</p>
+  <p style="color: red;">self.dispatchEvent(new PushEvent("push", {}));</p>
+  <script src="notificacao-sw.js"></script>
+</body>
+</html>
